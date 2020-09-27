@@ -1,8 +1,6 @@
 <div class="container bg-warning">
-    <h1>Welcome to my app</h1>
-    <p>This app allows you to get quotes from different people around the world. Feel free to add a quote.</p>
+    <h1>My Quote</h1>
     <hr>
-  
     <div class="row">
       <div class="col-md-6">
         <div *ngFor='let quote of quote;let i = index'>
@@ -22,5 +20,28 @@
     </div>
   
     
+
+
+    <!-- <div class="container">
+      <h1>My Goals</h1>
+      <hr>
+    
+      <div class="row">
+        <div class="col-md-6">
+          <div *ngFor='let goal of goals;let i = index'>
+            <div>
+              <h4 id={{i}} appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h4>
+              <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+            </div>
+    
+            <div *ngIf='goal.showDescription'>
+              <app-goal-detail  [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <p *ngIf='goals.length > 5'>You have too many goals</p>
+    </div> -->
 
    
