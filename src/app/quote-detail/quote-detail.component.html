@@ -1,1 +1,9 @@
-<p>quote-detail works!</p>
+<p>{{Quote.name}}</p>
+<p>This Quotes will be complete in {{Quote.completeDate|dateCount}} days</p>
+
+<button (click)='QuoteUpvote(true)' class="btn btn-outline-dark">Upvote</button>
+<button (click)='QuoteDownvote(true)' class="btn btn-outline-dark">Downvote</button>
+<button (click)='QuoteDelete(true)' class="btn btn-outline-dark">Delete Quote</button>
+
+
+
