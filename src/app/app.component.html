@@ -2,12 +2,10 @@
   <h1>My Quotes</h1>
   <hr>
   <ul>
-    <li *ngFor='let quotes of quotes'>
+    <li *ngFor='let quote of quote'>
       {{quote.name}}
     </li>
   </ul>
-  <p *ngIf='quote.length > 5'>Your quotes are too many</p>
-
-  <app-quote></app-quote>
-
+  <p *ngIf='quote.length > 5'>Your quote are too many</p>
+  <app-Quote></app-Quote>
 </div>

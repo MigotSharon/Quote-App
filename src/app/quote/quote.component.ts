@@ -41,14 +41,3 @@ export class QuoteComponent implements OnInit {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
